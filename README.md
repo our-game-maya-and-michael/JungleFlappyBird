@@ -4,10 +4,9 @@ Try to navegate in the jungle by being a big boy of a bird and see the dangers o
 
 ## How does it work ?
 * For the [background](https://github.com/our-game-maya-and-michael/JungleFlappyBird/tree/main/Assets/Background) I used the asset store of unity and downloaded a running background that someone made and posted it(Link to it in the Credits).
-* For the [bird](https://github.com/our-game-maya-and-michael/JungleFlappyBird/tree/main/Assets/Grey%20Bird) I also took an asset from the unity store and implemented it in the game by using the prefab and added a script to it that makes it flapp up and down,
-while checking that if the bird hit any of the trees, it will destory the bird object.
-* Trees check if the bird came a cross an edge collider to see if the player needs to get points for crossing the trees, and update the score manager that the score on the game map needs to be updated.
-* Trees spawner sits on the Main Camera and sets them 20f after the camera (its out of sight so that the player doesnt see the trees just spawn so he could have the feeling of walking in a path) [Scripts](https://github.com/our-game-maya-and-michael/JungleFlappyBird/tree/main/Assets/Scripts)
+* For the [bird](https://github.com/our-game-maya-and-michael/JungleFlappyBird/tree/main/Assets/Grey%20Bird) I also took an asset from the unity store and implemented it in the game by using the prefab and added a [script](https://github.com/our-game-maya-and-michael/JungleFlappyBird/blob/main/Assets/Scripts/FlappLikeABird.cs) to it that makes it flapp up and down, while [checking](https://github.com/our-game-maya-and-michael/JungleFlappyBird/blob/main/Assets/Scripts/BirdCollision.cs) that if the bird hit any of the trees, it will destory the bird object.
+* Trees [check](https://github.com/our-game-maya-and-michael/JungleFlappyBird/blob/main/Assets/Scripts/TreeScore.cs) if the bird came a cross an edge collider to see if the player needs to get points for crossing the trees, and update the [score manager](https://github.com/our-game-maya-and-michael/JungleFlappyBird/blob/main/Assets/Scripts/ScoreManager.cs) that the score on the game map needs to be updated.
+* Trees [spawner](https://github.com/our-game-maya-and-michael/JungleFlappyBird/blob/main/Assets/Scripts/TreeSpawner.cs) sits on the Main Camera and sets them 20f after the camera (its out of sight so that the player doesnt see the trees just spawn so he could have the feeling of walking in a path)
 ## Credits
 Graphics:
 * [Bird character](https://assetstore.unity.com/packages/2d/characters/2d-cartoon-birds-pack-149167)
